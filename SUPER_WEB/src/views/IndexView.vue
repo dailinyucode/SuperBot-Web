@@ -126,7 +126,7 @@ export default {
         let socket = ref(null)
         let model = ref("GPT3_5")
         let modelVisible = ref(false)
-        let url = ref("ws://后端IP:8624/chat/api/")
+        let url = ref(process.env.VUE_APP_WS_API)
         let aiLoading = ref(false)
         let aiPrompt = ref('有问题尽管问我....')
         onMounted(() => {
